@@ -22,7 +22,47 @@
 
   <section>
     <h2>фильтры</h2>
-    <!-- здесь будет фильтр -->
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <h3>Сетка:</h3>
+      <ul>
+        <li>
+          <input type="radio" name="grid-1" value="adaptive" id="filter-adaptive" checked>
+          <label for="filter-adaptive">Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" name="grid-2" id="filter-fixed" value="fixed">
+          <label for="filter-fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="grid-3" id="filter-rubber" value="rubber">
+          <label for="filter-rubber">Резиновая</label>
+        </li>
+      </ul>
+      <h3>особенности:</h3>
+      <ul>
+        <li>
+          <input type="checkbox" name="features-1" value="slider" id="filter-slider" checked>
+          <label for="filter-slider">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="features-2" value="advantages" id="filter-advantages">
+          <label for="filter-advantages">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="features-3" value="news" id="filter-news" checked>
+          <label for="filter-news">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="features-4" value="gallery" id="filter-gallery">
+          <label for="filter-gallery">Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="features-5" value="basket" id="filter-basket">
+          <label for="filter-basket">Корзина</label>
+        </li>
+      </ul>
+      <input type="submit" value="Показать">
+    </form>
   </section>
 
   <section>
@@ -100,6 +140,20 @@
   </section>
 </main>
 <footer>
+  <form action="https://echo.htmlacademy.ru/courses" method="post">
+
+    <h1>Напишите нам</h1>
+    <label for="Username">Ваше имя :</label><br>
+    <input type="text" name="Username" id="Username" value="Имя Фамилия" autofocus><br>
+
+    <label for="e-mail">Ваш e-mail:</label><br>
+    <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com"><br>
+
+    <label form="info"> Текс письма:</label><br>
+    <input type="text" name="info" id="info" placeholder="В свободной форме" rows="5" cols="50"><br>
+
+    <input type="submit" value="Отправить">
+  </form>
   <img src="img/map-marker.png" alt="карта" width="1440" height="416">
   <section>
     <h2>Мы в социальных сетях</h2>
