@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav>
-    <a href="index.html"><img src="img/nerds-logo.png" alt="Логотип Nerds" width="160" height="65"></a>
-    <ul>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a href="index.html" class="main-header-logo">
+      <img src="img/nerds-logo.png" alt="Логотип Nerds" width="160" height="65">
+    </a>
+    <ul class="main-services">
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
       <li><a>Магазин</a></li>
@@ -49,7 +54,7 @@
         <legend>Особенности</legend>
         <ul>
           <li>
-            <input type="checkbox" name="features-1"  id="filter-slider" checked>
+            <input type="checkbox" name="features-1" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
           <li>
@@ -57,15 +62,15 @@
             <label for="filter-advantages">Блок преимуществ</label>
           </li>
           <li>
-            <input type="checkbox" name="features-3"  id="filter-news" checked>
+            <input type="checkbox" name="features-3" id="filter-news" checked>
             <label for="filter-news">Новости</label>
           </li>
           <li>
-            <input type="checkbox" name="features-4"  id="filter-gallery">
+            <input type="checkbox" name="features-4" id="filter-gallery">
             <label for="filter-gallery">Галерея</label>
           </li>
           <li>
-            <input type="checkbox" name="features-5"  id="filter-basket">
+            <input type="checkbox" name="features-5" id="filter-basket">
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
@@ -196,7 +201,7 @@
     </p>
     <button type="submit" value="Отправить">
 
-  </form>
+   </form>
   <button type="button"> Закрыть</button>
 </section>
 </body>

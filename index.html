@@ -3,63 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav>
-    <a><img src="img/nerds-logo.png" alt="Логотип Nerds" width="160" height="65"></a>
-    <ul>
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
+      <img src="img/nerds-logo.png" alt="Логотип Nerds" width="160" height="65">
+    </a>
+    <ul class="main-services">
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
-    <a href="blank.html">Корзина</a>
+    <a href="#">Корзина</a>
   </nav>
-  <img src="img/slide1.png" alt="Долго, дорого, скрупулезно" width="698" height="413">
-  <img src="img/slide2.png" alt="Любим математику как никто другой" width="660" height="430">
-  <img src="img/slide3.png" alt=" Только ночь,только хардкор" width="759" height="411">
+
 </header>
 <main>
+  <div class="main-picture">
+    <img src="img/slide1.png" alt="Долго, дорого, скрупулезно" width="698" height="413">
+    <img src="img/slide2.png" alt="Любим математику как никто другой" width="660" height="430">
+    <img src="img/slide3.png" alt=" Только ночь,только хардкор" width="759" height="411">
+  </div>
   <h1>Дизайн студия Нердс </h1>
-  <section>
-    <h2>Наши услуги</h2>
-    <ul>
-      <li>
-        <h2>Веб-сайты</h2>
-        <img src="img/illustration-1.png" alt=" Логотип веб-сайтов" width="300" height="146">
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-        <a href="#"> Заказать</a>
-      </li>
-      <li>
-        <h2>Приложение</h2>
-        <img src="img/illustration-2.png" alt="Логотип приложений" width="300" height="146">
-        <p>Покорите тор-10 приложений AppStore и Google Play</p>
-        <a href="#"> Заказать</a>
-      </li>
-      <li>
-        <h2>Презентация</h2>
-        <img src="img/illustration-3.png" alt=" Логотип презентаций" width="300" height="146">
-        <p>Вы даже не подозреваете насколько вы изумительны</p>
-        <a href="#"> Заказать</a>
-      </li>
+
+  <div class="main-services">
+
+    <section class="">
+      <h2>Наши услуги</h2>
+      <ul class="site-navigation">
+        <li>
+          <h2>Веб-сайты</h2>
+          <img src="img/illustration-1.png" alt=" Логотип веб-сайтов" width="300" height="146">
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+          <a href="#" class="button"> Заказать</a>
+        </li>
+        <li>
+          <h2>Приложение</h2>
+          <img src="img/illustration-2.png" alt="Логотип приложений" width="300" height="146">
+          <p>Покорите тор-10 приложений AppStore и Google Play</p>
+          <a href="#" class="button"> Заказать</a>
+        </li>
+        <li>
+          <h2>Презентация</h2>
+          <img src="img/illustration-3.png" alt=" Логотип презентаций" width="300" height="146">
+          <p>Вы даже не подозреваете насколько вы изумительны</p>
+          <a href="#" class="button"> Заказать</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="index-columns">
+
+    <img src="img/nerds-illustration.png" alt="логотип" width="360" height="208">
+    <!--Мы — маленькая, но гордая дизайн-студия из Краснодара.-->
+  </div>
+
+  <div class="friends">
+
+    <ul class="site-navigation">
+      <a href="https://htmlacademy.ru/study">
+        <li><img src="img/logo-1.png" alt="Логотип HTML Академия " width="199" height="68"></li>
+      </a>
+      <a href="#">
+        <li><img src="img/logo-2.png" alt="Логотип Барбершопа" width="209" height="87"></li>
+      </a>
+      <a href="#">
+        <li><img src="img/logo-3.png" alt="Логотип Pink" width="185" height="52"></li>
+      </a>
+      <a href="#">
+        <li><img src="img/logo-4.png" alt="Логотип Mishka" width="173" height="84"></li>
+      </a>
     </ul>
-  </section>
-  <img src="img/nerds-illustration.png" alt="логотип" width="360" height="208">
-  <ul>
-    <a href="https://htmlacademy.ru/study">
-      <li><img src="img/logo-1.png" alt="Логотип HTML Академия " width="199" height="68"></li>
-    </a>
-    <a href="#">
-      <li><img src="img/logo-2.png" alt="Логотип Барбершопа" width="209" height="87"></li>
-    </a>
-    <a href="#">
-      <li><img src="img/logo-3.png" alt="Логотип Pink" width="185" height="52"></li>
-    </a>
-    <a href="#">
-      <li><img src="img/logo-4.png" alt="Логотип Mishka" width="173" height="84"></li>
-    </a>
-  </ul>
+  </div>
 </main>
 <footer>
 
@@ -81,12 +102,12 @@
   <b>Давайте дружить, это выгодно!</b>
   <p>Скидка 10% для наших друзей из социальных сетей.</p>
 </footer>
-<section>
-  <form action="https://echo.htmlacademy.ru/courses" method="post">
+<section class="modal">
+  <form class="message" action="https://echo.htmlacademy.ru/courses" method="post">
 
     <h2>Напишите нам</h2>
     <p>
-      <label for="Username">Ваше имя :</label>
+      <label class="" for="Username">Ваше имя :</label>
       <input type="text" name="Username" id="Username" value="Имя Фамилия" autofocus>
     </p>
     <p>
