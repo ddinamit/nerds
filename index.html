@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Nerds</title>
@@ -7,19 +7,25 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="page-body">
 <header class="main-header">
-  <nav class="main-navigation">
+  <nav class="main-navigation-logo">
     <a class="main-header-logo">
       <img src="img/nerds-logo.png" alt="Логотип Nerds" width="160" height="65">
     </a>
-    <ul class="main-services">
-      <li><a href="#">Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-    <a href="#">Корзина</a>
+    <div class="main-navigation-wrapper">
+      <div class="container">
+        <ul class="main-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="basket">
+          <a  class="logo-basket" href="#">Корзина</a>
+        </div>
+      </div>
+    </div>
   </nav>
 
 </header>
@@ -31,24 +37,23 @@
   </div>
   <h1>Дизайн студия Нердс </h1>
 
-  <div class="main-services">
 
-    <section class="">
+    <section class="service">
       <h2>Наши услуги</h2>
-      <ul class="site-navigation">
-        <li>
+      <ul class="service-list">
+        <li class="services-item">
           <h2>Веб-сайты</h2>
           <img src="img/illustration-1.png" alt=" Логотип веб-сайтов" width="300" height="146">
           <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
           <a href="#" class="button"> Заказать</a>
         </li>
-        <li>
+        <li class="services-item">
           <h2>Приложение</h2>
           <img src="img/illustration-2.png" alt="Логотип приложений" width="300" height="146">
           <p>Покорите тор-10 приложений AppStore и Google Play</p>
           <a href="#" class="button"> Заказать</a>
         </li>
-        <li>
+        <li class="services-item">
           <h2>Презентация</h2>
           <img src="img/illustration-3.png" alt=" Логотип презентаций" width="300" height="146">
           <p>Вы даже не подозреваете насколько вы изумительны</p>
@@ -66,9 +71,11 @@
 
   <div class="friends">
 
-    <ul class="site-navigation">
+    <ul class="friends-list">
       <a href="https://htmlacademy.ru/study">
-        <li><img src="img/logo-1.png" alt="Логотип HTML Академия " width="199" height="68"></li>
+        <li class="friends-item">
+          <img src="img/logo-1.png" alt="Логотип HTML Академия " width="199" height="68">
+        </li>
       </a>
       <a href="#">
         <li><img src="img/logo-2.png" alt="Логотип Барбершопа" width="209" height="87"></li>
