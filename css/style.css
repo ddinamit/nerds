@@ -85,69 +85,61 @@ img {
 
 .button {
   color: #FFFFFF;
-  border: none;
   text-decoration: none;
   cursor: pointer;
   font-size: 16px;
-}
-
-.button1:hover {
-  color: #FFFFFF;
-  background: #FB565A;
   border-radius: 3px;
   text-align: center;
   padding: 14px 40px;
   border: 2px solid #FB565A;
+  background-color: #FB565A;
 }
 
-.button1:focus {
-  background: #E74246;
-  border-radius: 3px;
-  text-align: center;
+.button-red:hover,
+.button-red:focus {
+  border: 2px solid #FB565A;
+  background-color: #FB565A;
+
 }
 
-.button1:active {
-  background: #D7373B;
-  border-radius: 3px;
-  opacity: 0.3;
-  text-align: center;
+.button-red:focus {
+  background-color: #E74246;
 }
 
-.button2:hover {
-  color: #FFFFFF;
-  background: #00CA74;
-  border-radius: 3px;
-  padding: 14px 40px;
-  border: 2px solid #4CAF50
-}
-
-.button2:focus {
-  background: #00BC6C;
-  border-radius: 3px;
-}
-
-.button2:active {
-  background: #00AA62;
-  border-radius: 3px;
+.button-red:active {
+  background-color: #D7373B;
   opacity: 0.3;
 }
 
-.button3:hover {
-  color: #FFFFFF;
-  background: #EFC84A;
-  border-radius: 3px;
-  padding: 14px 40px;
+.button-green:hover,
+.button-green:focus {
+  border: 2px solid #4CAF50;
+  background-color: #00CA74;
+}
+
+.button-green:focus {
+  background-color: #00BC6C;
+
+}
+
+.button-green:active {
+  background-color: #00AA62;
+  opacity: 0.3;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
   border: 2px solid #EFC84A;
+  background-color: #EFC84A;
 }
 
-.button3:focus {
+.button-yellow:focus {
   background: #EAB534;
-  border-radius: 3px;
+
 }
 
-.button3:active {
+.button-yellow:active {
   background: #E5A722;
-  border-radius: 3px;
   opacity: 0.3;
 }
 
@@ -177,4 +169,37 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 360px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 10px 25px;
+  border: 5px solid #cccccc;
+  text-align: left;
+}
+
+.site-navigation {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #EEEEEE;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.logo-basket a :hover,
+.logo-basket a :focus
+{
+
+ color: #FB565A;
+}
+
+.site-navigation a:active,
+.logo-basket a:active{
+  opacity: 0.3;
+
 }
