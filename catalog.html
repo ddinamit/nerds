@@ -3,87 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav>
-    <a href="index.html"><img src="img/logo.jpg" alt="Логотип Nerds"></a>
-    <ul>
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-logo">
+      <img src="img/nerds-logo.png" alt="Логотип Nerds" width="160" height="65">
+    </a>
+    <ul class="site-navigation">
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
       <li><a>Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
-    <a href="blank.html">Корзина</a>
+
+    <a class="user-basket" href="#">Корзина</a>
   </nav>
 </header>
 <main>
-  <h1>Магазин готовых шаблонов</h1>
-
+  <h1 class="title">Магазин готовых шаблонов</h1>
   <section>
-    <h2>фильтры</h2>
-    <!-- здесь будет фильтр -->
+    <h2 class="visually-hidden">фильтры шаблонов </h2>
+
+    <form class="filter" action="https://echo.htmlacademy.ru/courses" method="get">
+      <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+            <label for="filter-adaptive">Адаптивная</label>
+            <input type="radio" name="filter-adaptive" id="filter-adaptive" value="adaptive" checked>
+
+          </li>
+          <li>
+            <label for="filter-fixed"> Фиксированная</label>
+            <input type="radio" name="filter-fixed" id="filter-fixed" value="fixed">
+
+          </li>
+          <li>
+            <label for="filter-rubber">Резиновая</label>
+            <input type="radio" name="filter-rubber" id="filter-rubber" value="rubber">
+
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Особенности:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="features-1" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="features-2" id="filter-advantages">
+            <label for="filter-advantages">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="features-3" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" name="features-4" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="features-5" id="filter-basket">
+            <label for="filter-basket">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="button button-gray" type="submit"> Показать</button>
+    </form>
   </section>
 
-  <section>
-    <h2>Каталог Шаблонов</h2>
-    <ul>
+  <section class="catalog">
+    <h2 class="visually-hidden">Каталог Шаблонов</h2>
+    <ul class="catalog-list">
       <li>
-        <img src="img/logo.jpg">
-        <div>
+        <a href="#">
+          <img src="img/img-sedona.jpg" alt="Логотип Sedona" width="360" height="576">
+        </a>
+        <div class="catalog-info">
           <h3>Sedona</h3>
           <p>Информационный сайт для туристов</p>
-          <a href="blank.html">9900 руб.</a>
+          <a class="button" href="#">9900 руб</a>
         </div>
       </li>
       <li>
-        <img src="img/logo.jpg">
-        <div>
+        <a href="#">
+          <img src="img/img-pink.jpg" alt="Логотип Pink App" width="360" height="576">
+        </a>
+        <div class="catalog-info">
           <h3>Pink App</h3>
           <p>Продуктовый лендинг на ios и Android Play</p>
-          <a href="blank.html">9900 руб.</a>
+          <a class="button" href="#">9900 руб</a>
         </div>
       </li>
       <li>
-        <img src="img/logo.jpg">
-        <div>
+
+        <a href="#">
+          <img src="img/img-barbershop.jpg" alt="Логотип Barbershop" width="360" height="576">
+        </a>
+        <div class="catalog-info">
           <h3>Barbershop</h3>
           <p> Сайт салона красоты. Для мужчин, да</p>
-          <a href="blank.html">9900 руб.</a>
+          <a class="button" href="#">9900 руб</a>
         </div>
       </li>
       <li>
-        <img src="img/logo.jpg">
-        <div>
+        <a href="#">
+          <img src="img/img-mishka.jpg" alt="Логотип Mishka" width="360" height="576">
+        </a>
+        <div class="catalog-info">
           <h3>Mishka</h3>
           <p>Интернет-магазин вязаных игрушек</p>
-          <a href="blank.html">9900 руб.</a>
+          <a class="button" href="#">9900 руб</a>
         </div>
       </li>
       <li>
-        <img src="img/logo.jpg">
-        <div>
+
+        <a href="#">
+          <img src="img/img-aplus.jpg" alt="Логотип A Plus" width="360" height="576">
+        </a>
+        <div class="catalog-info">
           <h3>A Plus</h3>
           <p>Лендинг курсов повышения квалификации </p>
-          <a href="blank.html">9900 руб.</a>
+          <a class="button" href="#">9900 руб</a>
         </div>
       </li>
       <li>
-        <img src="img/logo.jpg">
-        <div>
+        <a href="#">
+          <img src="img/img-kvast.jpg" alt="Логотип Кваст" width="360" height="576">
+        </a>
+        <div class="catalog-info">
           <h3>Кваст</h3>
           <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="blank.html">9900 руб.</a>
+          <a class="button" href="#">9900 руб</a>
         </div>
       </li>
-
     </ul>
   </section>
 </main>
 <footer>
   <section>
-    <h2>Мы в социальных сетях</h2>
-    <ul>
+
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <ul class="social-list">
       <li>
         <a href="#">Вконтакте</a>
       </li>
@@ -95,8 +163,9 @@
       </li>
     </ul>
   </section>
-  <b>Давайте дружить, это выгодно!</b>
-  <p>Скидка 10% для наших друзей из социальных сетей.</p>
+  <b class="main-footer-lead">Давайте дружить, это выгодно!</b>
+  <p class="main-footer-text">Скидка 10% для наших друзей из социальных сетей.</p>
 </footer>
+
 </body>
 </html>
